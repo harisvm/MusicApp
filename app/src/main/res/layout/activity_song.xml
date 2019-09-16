@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".SongActivity">
+    <ImageView
+        android:id="@+id/imagee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/music"
+        android:scaleType="fitXY"
+
+        />
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SONG NAME"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="350dp"
+        />
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ARTIST"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:textColor="#ffffff"
+        />
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageButton
+android:id="@+id/rewind"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_fast_rewind_white_24dp"
+            />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_play_arrow_white_24dp"
+            />
+        <ImageButton
+            android:id="@+id/forward"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/ic_fast_forward_white_24dp"
+            />
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:layout_below="@id/linear_layout"
+        />
+
+</RelativeLayout>
